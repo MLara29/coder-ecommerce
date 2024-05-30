@@ -31,10 +31,17 @@ export function App() {
          </Route>
       </Routes>
 
-      <div>
+          <div className='botoes-cart-container'>
+            
+            <div className='botoes-cart'>
+            <button onClick={ () => setcountCart(countCart + 1)}>+</button>
+            <p>{countCart}</p>
+            <button onClick={ () => setcountCart(countCart - 1)}>-</button>
+            </div>
+            
             
             <button onClick={ () => setcountCart(countCart + 1)}>Adicionar ao Carrinho</button>
-            <p>{countCart}</p>
+            
             
           </div>
       

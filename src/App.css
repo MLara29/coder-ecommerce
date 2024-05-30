@@ -1,0 +1,12 @@
+.botoes-cart-container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.botoes-cart{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: space-between;
+    
+}
