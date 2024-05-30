@@ -1,0 +1,12 @@
+.Container-Cart{
+    display: flex;
+    width: 70px;
+    gap: 10px;
+    
+}
+.Counter-Cart{
+    color: azure;
+    font-size: 22px;
+    
+   
+}

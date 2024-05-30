@@ -1,0 +1,46 @@
+.navigation{
+    height:70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    
+}
+.Logo-NavBar{
+    
+    width: 200px; 
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 10px;   
+}
+.Nome-Loja{
+    color:azure;
+    font-size: 21px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 5px;
+   
+}
+.Nav-Links{
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+}
+.Link-Nav{
+    text-decoration: none;
+    color: azure;
+}
+.material-icons{
+    
+    color: azure;
+    font-size: 35px;
+    
+}
