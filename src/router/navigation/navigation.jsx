@@ -12,11 +12,11 @@ export function Navigation() {
             </div>
             <div className="Nav-Links">
                 
-                <a className='Link-Nav' href="">INÍCIO</a>
-                <a className='Link-Nav' href="">ELETRÔNICOS</a>
-                <a className='Link-Nav' href="">INFORMATICA</a>
-                <a className='Link-Nav' href="">GAMES</a>
-                <a className='Link-Nav' href="LOGIN">LOGIN</a>
+                <a className='Link-Nav' href="">Início</a>
+                <a className='Link-Nav' href="">Mac</a>
+                <a className='Link-Nav' href="">iPhone</a>
+                <a className='Link-Nav' href="">Watch</a>
+                <a className='Link-Nav' href="LOGIN">Login</a>
                 <CartWidget/>
             </div>
          </div>
