@@ -4,7 +4,7 @@ import './categories.css'
 
 export function Categories( { categories } ){
 
-   console.log(categories)
+   
   
   return (
 

@@ -38,6 +38,7 @@ export function Home() {
       <Categories categories={categories} />
       
       
+      
     </div> 
   )
 }

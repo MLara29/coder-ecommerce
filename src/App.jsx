@@ -13,7 +13,7 @@ export function App() {
    
   const [countCart, setcountCart] = useState(1)
 
- console.log(countCart)
+ 
 
   return (
     <>

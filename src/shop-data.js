@@ -5,7 +5,7 @@ export const SHOP_DATA = [
         {
           id: 1,
           name: 'MacBook Pro 14" M3/16GB/512GB SSD',
-          imageUrl: 'hhttps://www.goimports.com.br/image/catalog/0%20macm3/M.3/mbp14-spacegray-gallery1-202310.png',
+          imageUrl: 'https://www.goimports.com.br/image/catalog/0%20macm3/M.3/mbp14-spacegray-gallery1-202310.png',
           price: 11999.00,
         },
         {
@@ -58,7 +58,7 @@ export const SHOP_DATA = [
         {
           id: 9,
           name: 'iPhone 14 128GB',
-          imageUrl: 'https://www.goimports.com.br/image/catalog/iphone14/Captura%20de%20tela%202022-09-13%20121105.png',
+          imageUrl: 'https://www.goimports.com.br/image/catalog/00iphone15/iphone-15-finish-select-202309-6-1inch-pink.png',
           price: 3799.00,
         },
         {
@@ -99,7 +99,7 @@ export const SHOP_DATA = [
         {
           id: 15,
           name: 'iPad Air 5ª Geração 256GB Wi-Fi',
-          imageUrl: 'https://www.goimports.com.br/image/catalog/Air%205/ipad-air-select-wifi-spacegray-202203.png',
+          imageUrl: 'https://www.goimports.com.br/image/catalog/Air%205/ipad-air-select-wifi-blue-202203.png',
           price: 4399.00,
         },
         {
@@ -175,7 +175,7 @@ export const SHOP_DATA = [
         {
           id: 26,
           name: 'Airpods Max',
-          imageUrl: 'https://www.goimports.com.br/image/catalog/Max/hero_gray__6o1xqpyfsuay_large_2x.jpg',
+          imageUrl: 'https://www.goimports.com.br/image/catalog/0ssd%20sansung/airpods-max-select-skyblue-202011.png',
           price: 3699.00,
         },
         {
