@@ -2,7 +2,7 @@
     height:70px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: blue;
     
@@ -27,7 +27,7 @@
 }
 .Nav-Links{
     height: 50px;
-    width: 80%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
