@@ -1,4 +1,5 @@
 import './category.css'
+import { NavLink } from 'react-router-dom'
 
 export function Category({ category }) {
 
@@ -11,8 +12,13 @@ export function Category({ category }) {
         style={{ backgroundImage: `url(${imageUrl})`}}
       />
         <div className="category-body-container">
-        <h2>{title}</h2>
-        <p>Comprar Agora</p>
+        
+              <NavLink className='Link-Nav' to={title}>
+                   <h2>{title}</h2>
+               </NavLink>
+               
+               console.log({title})
+        
       </div>
     </div>
   )

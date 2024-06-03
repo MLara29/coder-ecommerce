@@ -1,6 +1,7 @@
 import './navigation.css'
 import { CartWidget } from './cart/cartwidget'
 import { Outlet } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export function Navigation() {
     return(
@@ -8,15 +9,19 @@ export function Navigation() {
          <div className="navigation">
             <div className='Logo-NavBar'>
                 <a><i className="material-icons">all_inclusive</i></a>
-                <a className='Nome-Loja'>Infinity Shop</a>
+                <NavLink to="/">
+                   <a className='Nome-Loja'>Infinity Shop</a>
+                </NavLink>
+                
             </div>
             <div className="Nav-Links">
-                
-                <a className='Link-Nav' href="">Início</a>
-                <a className='Link-Nav' href="">Mac</a>
-                <a className='Link-Nav' href="">iPhone</a>
-                <a className='Link-Nav' href="">Watch</a>
-                <a className='Link-Nav' href="LOGIN">Login</a>
+               <NavLink className='Link-Nav' to='/'>
+                    Início
+               </NavLink>
+               <NavLink className='Link-Nav' to='/products'>
+                    Produtos
+               </NavLink>
+              
                 <CartWidget/>
             </div>
          </div>

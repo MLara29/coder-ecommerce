@@ -6,7 +6,7 @@ const categories = [
   {
     "id": 1,
     "title": "Mac",
-    "imageUrl": "https://www.goimports.com.br/image/catalog/0macpro14/002/mba15-midnight-select-202306.jpeg"
+    "imageUrl": "https://www.goimports.com.br/image/catalog/Mac%20m2/macbook-air-midnight-gallery2-20220606_GEO_US.png"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@ const categories = [
   {
     "id": 4,
     "title": "Watch",
-    "imageUrl": "https://www.goimports.com.br/image/catalog/00Watc9/MT5N3ref_VW_34FR+watch-49-titanium-ultra2_VW_34FR+watch-face-49-alpine-ultra2_VW_34FR_GEO_BR.png"
+    "imageUrl": "https://www.goimports.com.br/image/catalog/00Watc9/MT653_VW_34FR+watch-49-titanium-ultra2_VW_34FR+watch-face-49-ocean-ultra2_VW_34FR_GEO_BR.png"
   },
   {
     "id": 5,

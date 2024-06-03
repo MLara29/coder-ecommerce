@@ -1,5 +1,7 @@
 import { ProductCard } from "../product-card/product-card"
 import './category-preview.css'
+import { Route, Routes} from 'react-router-dom'
+
 
 export function CategoryPreview({title, products}){
     
@@ -12,6 +14,8 @@ export function CategoryPreview({title, products}){
                 .map((product)=> <ProductCard key= {product.id} product={product}  />)
             }
            </div>
+
+         
            
         </div>
         

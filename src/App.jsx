@@ -6,8 +6,8 @@ import { Navigation } from './router/navigation/navigation'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { itemCount } from './components/itemCount/itemCount'
 import { CategoriesPerview } from './components/categories-perview/categories-perview'
-
-
+import { Products } from './router/products/products'
+import { CategoryHome } from './router/category-home/category-home'
 
 export function App() {
    
@@ -17,13 +17,18 @@ export function App() {
 
   return (
     <>
-       <Navigation/>
-       <Home/>
-       <CategoriesPerview/>
+     <Routes>
+        <Route path='/*' element={<Navigation/>}>
 
-
-      
-      
+          <Route index element={<Home/>}/>
+          <Route path='products' element={<Products />} />
+          <Route path=':category' element={<CategoryHome />} />
+          
+          
+          
+        </Route>
+     </Routes> 
+     
     </>
   )
 }
