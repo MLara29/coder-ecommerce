@@ -2,6 +2,7 @@ import "./product-card.css"
 import { Button } from "../button/button"
 
 export function ProductCard({product}){
+    
     const {name, price, imageUrl, id}= product
 
    

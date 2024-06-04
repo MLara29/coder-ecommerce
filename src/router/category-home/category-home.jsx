@@ -37,7 +37,7 @@ export function CategoryHome(){
 
     useEffect(()=>{
         setProducts(categoriesMap[category])
-    },[category, categoriesMap[category]])
+    },[category, categoriesMap])
 
    console.log(category)
     

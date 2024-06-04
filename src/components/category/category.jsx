@@ -17,7 +17,7 @@ export function Category({ category }) {
                    <h2>{title}</h2>
                </NavLink>
                
-               console.log({title})
+               
         
       </div>
     </div>

@@ -2,8 +2,12 @@ import './navigation.css'
 import { CartWidget } from './cart/cartwidget'
 import { Outlet } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 export function Navigation() {
+
+   
+
     return(
         <>
          <div className="navigation">
@@ -23,6 +27,7 @@ export function Navigation() {
                </NavLink>
               
                 <CartWidget/>
+                
             </div>
          </div>
          <Outlet/>
