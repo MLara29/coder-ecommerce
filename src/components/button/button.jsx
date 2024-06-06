@@ -11,6 +11,8 @@ export function Button(){
     const{counterCart, setCounterCart} = useContext(CartContext)
 
     const setCounterCarrinho = () => setCounterCart(counterCart + 1)
+    const setCounterCarrinhoAdd = () => setCounterCart(counterCart + 1)
+    const setCounterCarrinhoSub = () => setCounterCart(counterCart - 1)
 
     
     
@@ -20,6 +22,12 @@ export function Button(){
     return(
         <>
            <button onClick={setCounterCarrinho} className="button-card" >Adicionar ao Carrinho</button>
+           <div className='container-botoes-add-sub'>
+           <button onClick={setCounterCarrinhoAdd} className="button-card-Add">+</button>
+           <span className='info-cart-card'>{counterCart}</span>
+           <button onClick={setCounterCarrinhoSub} className="button-card-Sub">-</button>
+           </div>
+           
            <CartWidget  />
           
         </>

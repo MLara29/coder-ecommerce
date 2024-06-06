@@ -7,3 +7,38 @@
     margin-top: 30px;
     width: 100%;
 }
+.button-card-Add{
+    background-color: blue;
+    color: beige;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 30%;
+    height: 30px;
+}
+.button-card-Sub{
+    background-color: blue;
+    color: beige;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 30%;
+    height: 30px;
+}
+.container-botoes-add-sub{
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-cart-card{
+    height: 22px;
+    width: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
