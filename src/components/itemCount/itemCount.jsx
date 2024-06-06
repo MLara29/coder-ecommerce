@@ -1,11 +1,24 @@
 import { useState } from "react"
+import { CartWidget } from "../../router/navigation/cart/cartwidget"
+import { CartContext } from "../../context/cartContext"
+import { useParams } from "react-router-dom"
 
-export function itemCount() {
+export function itemCount( ) {
 
- 
+    
 
+    
+    
+       
+    
+    
+   
+    
     return(
-       <div><p>"Teste"</p></div>
+         
+        <>
+            <CartWidget />
+        </>
           
         
     )

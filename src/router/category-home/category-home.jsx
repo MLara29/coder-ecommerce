@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
-import { addCollentionAdDocuments, getCategoriesAndDocuments } from "../../utils/firebase"
+import { useContext, useEffect, useState } from "react"
 import { ProductCard } from "../../components/product-card/product-card";
-import { SHOP_DATA } from "../../shop-data";
+import { CategoriesContext } from '../../context/categoriesContext'
+
 
 
 
@@ -11,29 +11,8 @@ export function CategoryHome(){
     
 
     const {category} = useParams()
-
-    const [categoriesMap, setCategoriesMap] = useState({})
+    const { categoriesMap } = useContext(CategoriesContext)
     const [products, setProducts] = useState(categoriesMap[category])
-
-    
-    
-    useEffect(()=>{
-        addCollentionAdDocuments('categories', SHOP_DATA)
-    },[])
-
-
-    useEffect(()=>{
-        const getCategories = async ()=> {
-            const categoryMap = await getCategoriesAndDocuments()
-            
-            setCategoriesMap(categoryMap)
-            
-        }
-
-        getCategories()
-        console.log(categoriesMap)
-        
-    },[])
 
     useEffect(()=>{
         setProducts(categoriesMap[category])

@@ -1,35 +1,30 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import './cartwidget.css'
-import { count } from 'firebase/firestore/lite'
-import { Button } from '../../../components/button/button'
+import { CartContext } from '../../../context/cartContext'
 
 
 
 
-export function CartWidget({variavel, value}){
 
-   
-  const [countCart, setCountCart]=useState(0)
+export function CartWidget(){
+
+  const value = useContext(CartContext)
+
+  const {counterCart} = value
+
+  console.log(counterCart)
+
   
-  useEffect(()=>{setCountCart(countCart)},[])
-
-  const counter = value
   
-  console.log(value)
    
      
     return(
-        <>
-         <div className='Container-Cart'>
+        
+         <div className='Container-Carrinho'>
           
            <a><i className="material-icons">shopping_cart </i></a>
-           <span className='Counter-Cart'>
-            
-            {counter}
-            
-            
-            </span>
+           <span className='Counter-Cart'>{counterCart}</span>
          </div>
-        </>
+        
     )
 }

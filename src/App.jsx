@@ -21,7 +21,7 @@ export function App() {
         <Route path='/*' element={<Navigation/>}>
 
           <Route index element={<Home/>}/>
-          <Route path='products' element={<Products />} />
+          <Route path='products/*' element={<Products />} />
           <Route path=':category' element={<CategoryHome />} />
           
           
