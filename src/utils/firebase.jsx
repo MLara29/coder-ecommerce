@@ -1,5 +1,6 @@
 
 import { initializeApp } from 'firebase/app'
+import { getDatabase } from 'firebase/database';
 import { collection, doc, getDocs, getFirestore, query, writeBatch } from 'firebase/firestore'
 
 /* const firebaseConfig = {
@@ -14,13 +15,18 @@ import { collection, doc, getDocs, getFirestore, query, writeBatch } from 'fireb
 const firebaseConfig = {
   apiKey: "AIzaSyATTUmYeeqqWXifV1iJ5FOFo1Fa_lW6Uvo",
   authDomain: "coder-eletronico-ecommerce.firebaseapp.com",
+  databaseURL: "https://coder-eletronico-ecommerce-default-rtdb.firebaseio.com/",
   projectId: "coder-eletronico-ecommerce",
   storageBucket: "coder-eletronico-ecommerce.appspot.com",
   messagingSenderId: "155128635978",
   appId: "1:155128635978:web:f4ce7ee659dc3b610e3cb3"
 };
 
+
+
 const app = initializeApp(firebaseConfig)
+
+ export const database = getDatabase(app)
 
 export const db = getFirestore()
 

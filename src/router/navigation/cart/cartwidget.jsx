@@ -12,7 +12,7 @@ export function CartWidget(){
 
   const {counterCart} = value
 
-  console.log(counterCart)
+  
 
   
   
