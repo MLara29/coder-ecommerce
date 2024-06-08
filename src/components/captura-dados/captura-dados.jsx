@@ -12,7 +12,7 @@ export function capturadados(){
     
 
     useEffect(()=>{
-        const  itemsDatabase = ref(database,items)
+        const  itemsDatabase = ref(database,'categories')
 
         get(itemsDatabase).then((snapshot)=>{
             if(snapshot.exists()){
