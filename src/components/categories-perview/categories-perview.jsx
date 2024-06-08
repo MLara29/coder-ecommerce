@@ -23,7 +23,7 @@ export function CategoriesPerview(){
         
     },[])
 
-    console.log(categories)
+ //   console.log(categories)
     return(
        <>
         {
