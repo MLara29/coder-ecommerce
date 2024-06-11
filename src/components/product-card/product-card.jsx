@@ -15,6 +15,7 @@ export function ProductCard({product}){
                 <span className='price'>{price}</span>
             </div>
             <Button/>
+            <button>ver detalhes do Produto</button>
             
         </div>
     )

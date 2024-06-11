@@ -2,6 +2,8 @@
 import { initializeApp } from 'firebase/app'
 import { getDatabase } from 'firebase/database';
 import { collection, doc, getDocs, getFirestore, query, writeBatch } from 'firebase/firestore'
+import firebase from 'firebase/compat/app';
+import 'firebase/firestore'
 
 /* const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
@@ -22,11 +24,9 @@ const firebaseConfig = {
   appId: "1:155128635978:web:f4ce7ee659dc3b610e3cb3"
 };
 
-
+export { firebase}
 
 const app = initializeApp(firebaseConfig)
-
- export const database = getDatabase(app)
 
 export const db = getFirestore()
 

@@ -1,5 +1,5 @@
 import { Route, Routes} from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { Home } from './router/home/home'
 import { Navigation } from './router/navigation/navigation'
@@ -8,11 +8,22 @@ import { itemCount } from './components/itemCount/itemCount'
 import { CategoriesPerview } from './components/categories-perview/categories-perview'
 import { Products } from './router/products/products'
 import { CategoryHome } from './router/category-home/category-home'
+import { capturadados } from './components/captura-dados/captura-dados'
+import axios from "axios"
+
 
 export function App() {
-   
-  const [countCart, setcountCart] = useState(1)
 
+   
+  const [aplleProducts, setAplleProducts]= useState({})
+
+  useEffect(()=>{
+
+    capturadados()
+     .then(data=>console.log(data))
+
+  },[])
+  
  
 
   return (

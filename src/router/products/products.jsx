@@ -3,6 +3,9 @@ import { CategoriesPerview } from "../../components/categories-perview/categorie
 import { CategoryHome } from "../category-home/category-home";
 
 export function Products() {
+
+
+  
   return (
     <>
      <Routes>

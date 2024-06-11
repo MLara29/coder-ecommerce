@@ -14,7 +14,7 @@ export const CartProvaider = ({children})=>{
     
     const [counterCart, setCounterCart] = useState(0)
 
-    console.log(counterCart)
+    
     
     const value = { isCartOpen, setIsCartOpen, counterCart, setCounterCart}
 

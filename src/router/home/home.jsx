@@ -1,4 +1,5 @@
 import { Categories } from "../../components/categories/categories"
+import { capturadados } from "../../components/captura-dados/captura-dados"
 import './home.css'
 
 
@@ -31,14 +32,20 @@ const categories = [
 ]
 
 export function Home() {
+
+
+ 
+
+  
   return (
 
     
     <div className="container-Home">
       <Categories categories={categories} />
       
-      
+      <capturadados/>
       
     </div> 
+    
   )
 }

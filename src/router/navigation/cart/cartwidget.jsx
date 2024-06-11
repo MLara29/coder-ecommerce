@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import './cartwidget.css'
 import { CartContext } from '../../../context/cartContext'
+import { capturadados } from '../../../components/captura-dados/captura-dados'
 import { capturaDadoscontext } from '../../../components/captura-dados/captura-dados'
 
 
@@ -9,20 +10,15 @@ import { capturaDadoscontext } from '../../../components/captura-dados/captura-d
 
 export function CartWidget(){
 
-  const capturaDadosCart = useContext(capturaDadoscontext)
+  const itemsData= useContext(capturaDadoscontext)
 
   const value = useContext(CartContext)
 
   const {counterCart} = value
 
-  console.log(capturaDadosCart)
+  const {itemsdata} = itemsData
 
-  
-
-  
-  
-   
-     
+ 
     return(
         
          <div className='Container-Carrinho'>

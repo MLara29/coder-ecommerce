@@ -1,5 +1,6 @@
 import './category.css'
 import { NavLink } from 'react-router-dom'
+import { capturadados } from '../captura-dados/captura-dados'
 
 export function Category({ category }) {
 
@@ -16,6 +17,7 @@ export function Category({ category }) {
               <NavLink className='Link-Nav' to={title}>
                    <h2>{title}</h2>
                </NavLink>
+               <a href="" onClick={<capturadados/>}>Info</a>
                
                
         

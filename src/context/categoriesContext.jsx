@@ -10,14 +10,6 @@ export const CategoriesProvider = ({children}) =>{
 
     const [categoriesMap, setCategoriesMap] = useState({})
 
-   // useEffect(()=>{
-   //     addCollentionAdDocuments('categories', SHOP_DATA)
-   // },[])
-
-    console.log(categoriesMap)
-
-    
-
     useEffect(()=>{
         const getCategories = async () =>{
            const categoryMap =  await getCategoriesAndDocuments()

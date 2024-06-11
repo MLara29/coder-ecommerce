@@ -23,7 +23,7 @@ export function Button(){
         <>
            <button onClick={setCounterCarrinho} className="button-card" >Adicionar ao Carrinho</button>
            <div className='container-botoes-add-sub'>
-           <button onClick={setCounterCarrinhoAdd} className="button-card-Add">+</button>
+           <button onClick={setCounterCarrinhoAdd} className="button-card-Add" >+</button>
            <span className='info-cart-card'>{counterCart}</span>
            <button onClick={setCounterCarrinhoSub} className="button-card-Sub">-</button>
            </div>
