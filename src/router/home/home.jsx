@@ -1,6 +1,6 @@
 import { Categories } from "../../components/categories/categories"
-import { capturadados } from "../../components/captura-dados/captura-dados"
 import './home.css'
+
 
 
 const categories = [
@@ -33,9 +33,7 @@ const categories = [
 
 export function Home() {
 
-
- 
-
+  
   
   return (
 

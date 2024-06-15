@@ -1,6 +1,6 @@
 import './category.css'
 import { NavLink } from 'react-router-dom'
-import { capturadados } from '../captura-dados/captura-dados'
+
 
 export function Category({ category }) {
 

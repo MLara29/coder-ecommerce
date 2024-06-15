@@ -15,17 +15,21 @@ const infoProducts =[
 
 export function item(){
     
+    console.log('comecei a rodar')
 
+    
+    return new Promise((resolve, reject)=>{
 
-    returnnewPromise((resolve, reject)=>{
-        setTimeout(()=>{},2000)
+        setTimeout(()=>{
+            if(infoProducts.length > 0){
+                resolve(infoProducts)
+            }
+            else{
+                reject("erro nas informações de Produtos Solicitados")
+            }
+        },2000)
 
-        if(infoProducts.length > 0){
-            resolve(infoProducts)
-        }
-        else{
-            reject("erro nas informações de Produtos Solicitados")
-        }
+        
     })
     
 }
